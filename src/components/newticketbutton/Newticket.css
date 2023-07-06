@@ -1,0 +1,50 @@
+.btns {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    filter: drop-shadow( 2px 3px 3px #000);
+}
+
+.newticket-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.newticket-button .bbtn {
+    width: 200px;
+    height: 30px;
+    background: var(--color-white);
+    line-height: 30px;
+    color: var(--primary-color);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -2px -3px 3px #00000027;
+}
+
+.btns-cross {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    background: var(--color-white);
+    right: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* box-shadow: -2px -3px 3px #00000027; */
+}
+
+.icon-primary {
+    font-size: 14px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 800;
+}

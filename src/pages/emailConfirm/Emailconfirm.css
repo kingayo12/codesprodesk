@@ -1,0 +1,85 @@
+.confirm_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 100vh;
+    background: linear-gradient(116.46deg, #186679 -0.13%, #14004F 99.56%);
+}
+
+.back {
+    flex: 1;
+    z-index: 3;
+    /* background: linear-gradient(180deg, #0085FF 20%, #0363BB 80%), rgba(2, 47, 101, 0.51); */
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.c_illustrator {
+    flex: 2;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/illusatrators/confimMail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    z-index: 3;
+    border-radius: 40px 0px 0px 300px;
+    box-shadow: 2px 4px 2px #0085FF, -2px -4px 2px #0085FF;
+    border-left: 6px solid #0085FF;
+}
+
+.check-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.inn-icons {
+    font-size: 200px;
+    color: #fff;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.inn-message {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    text-align-last: center;
+    text-align: center;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-btn {
+    width: 50%;
+    padding: 10px;
+    font-size: 15px;
+    background:#000;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 600ms ease;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 3px 2px 1px #46464698, -2px -3px 2px 1px #ffffff44;
+    margin-top: 1rem;
+}
+
+.btn-btn:hover{
+    background: #00000072;
+}
+

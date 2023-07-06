@@ -1,0 +1,1237 @@
+.reg_container {
+    background: url("/img/bg435.jpg");
+    background-size: contain;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.bg {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(116.46deg, #186679 -0.13%, #14004F 99.56%);
+    backdrop-filter: blur(10px);
+    border-radius: 0 ;
+    background-repeat: no-repeat;
+    z-index: 3;
+    background-size: contain;
+}
+
+.illustrator2 {
+    flex: 1.5;
+    /* background: #fff; */
+    height: 100vh;
+    /* background: #0085FF; */
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -180px;
+    z-index: 1;
+}
+
+.reg_box {
+    clear: both;
+    margin: 0 100px;
+    width: 500px;
+    height: auto;
+    padding: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.reg_box h4 {
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.inputs .input-w {
+    width: 100%;
+    height: 100%;
+    padding: 10px 55px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 14px;
+    display: flex;
+    background: #fff;
+    outline: none;
+    border: 1px solid transparent;
+
+}
+
+.bar-inputs {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+    text-indent: 40px;
+    display: flex;
+    background: #fff;
+    border: 2px solid #0085FF;
+}
+
+.inputs .input-w:hover,
+.inputs .input-w:focus {
+    color: #0085FF;
+    border: 1px solid #0085FF;
+    font-weight: 500;
+}
+
+.pass-inputs {
+    display: flex;
+    gap: 1rem;
+}
+
+.pass-inputs label {
+    flex: 1;
+}
+
+.inputs {
+    display: flex;
+}
+
+.inputs .icon {
+    position: absolute;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    transition: all 400ms ease;
+}
+.inputs .icon2 {
+    position: absolute;
+    background: transparent;
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    right: 10px;
+    width: 50px;
+    transition: all 400ms ease;
+}
+
+
+.inputs:hover .icond,
+.inputs:focus .icond {
+    color: #0085FF;
+}
+
+.icond {
+    color: #000;
+    font-size: 20px;
+    transition: all 400ms ease;
+    /* background: #464646; */
+}
+
+
+/* .icon .icond:hover {
+    color: #0085FF;
+} */
+
+.logo {
+}
+
+.logo img {
+    width: 270px;
+}
+
+.reg_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    border-radius:30px 0 0 30px  ;
+    background: #fff;
+    float: right;
+}
+
+.reg_text h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Intro';
+    color: #0085FF;
+}
+
+.btn-primary {
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    background: #000;
+    font-size: 15px;
+    line-height: 1px;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 800ms ease;
+    cursor: pointer;
+    transition: color 1s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px 1px #186679, -1px -1px 4px 1px #14004f96;
+    margin-top: 1rem;
+}
+.btn-primary:hover{
+    background: #00000077;
+    color: #fff;
+
+}
+
+/* @media screen and (max-width: 3000px) {
+    .reg_container {
+        background: #fff;
+        max-width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+    }
+    .bg {
+        flex: 1.2;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/svg/background1.svg);
+        background-repeat: no-repeat;
+        background-position: -100px;
+        z-index: 3;
+        background-size: cover;
+    }
+    .reg_box {
+        position: absolute;
+        width: 500px;
+        height: 600px;
+        left: 20%;
+        top: 320px;
+        transform: translate(-27%, -38%);
+        background: transparent;
+        padding: 50px;
+    }
+    .reg_box h4 {
+        font-size: 15px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 0;
+    }
+    .inputs .input-w {
+        width: 100%;
+        height: 100%;
+        padding: 5px 55px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 20px;
+        display: flex;
+        background: #fff;
+    }
+    .bar-inputs {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 20px;
+        text-indent: 40px;
+        display: flex;
+        background: #fff;
+        border: 2px solid #0085FF;
+    }
+    .inputs .input-w:hover,
+    .inputs .input-w:focus {
+        color: #0085FF;
+        font-weight: 500;
+    }
+    .btn-primary {
+        width: 100%;
+        padding: 1px;
+        font-size: 15px;
+        background: linear-gradient(to right, #0363BB, #0085FF);
+        border-radius: 10px;
+        border-style: none;
+        color: #fff;
+        font-weight: 600;
+        transition: all 600ms ease;
+        cursor: pointer;
+        transition: color 0.4s linear;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 2px 4px 4px #464646, -2px -3px 4px #fff;
+        margin-top: 1rem;
+    }
+} */
+
+
+/* @media screen and (max-width: 1400px) {
+    .reg_container {
+        background: #fff;
+        max-width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+    }
+    .bg {
+        flex: 1.2;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/svg/background1.svg);
+        background-repeat: no-repeat;
+        background-position: -150px;
+        z-index: 3;
+        background-size: cover;
+    }
+    .illustrator2 {
+        flex: 1;
+        background: #fff;
+        height: 100vh;
+        background-image: url(../../assets/illusatrators/6343825.jpg);
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -180px;
+        z-index: 1;
+    }
+    .reg_box {
+        position: absolute;
+        width: 70%;
+        height: 600px;
+        left: 20%;
+        top: 40%;
+        transform: translate(-27%, -38%);
+        background: transparent;
+        padding: 50px;
+    }
+    .reg_box h4 {
+        font-size: 20px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 0;
+    }
+} */
+
+
+/* ------------------------------------Tablet Mode----------------------------- */
+
+
+/* @media screen and (max-width:1200px) {
+    .reg_container {
+        background: #fff;
+        max-width: 100%;
+        height: 110vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+    }
+    .bg {
+        flex: 5;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/svg/phonebg.svg);
+        background-repeat: no-repeat;
+        z-index: 3;
+        background-size: cover;
+        background-position: 100%;
+    }
+    .illustrator2 {
+        flex: 1;
+        background: #fff;
+        height: 100vh;
+        background-image: url(../../assets/illusatrators/regillustrator.png);
+        width: 100%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        z-index: 1;
+        animation: bounceInUp;
+        animation-duration: 2s;
+       
+    }
+    .reg_box {
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        left: 20%;
+        top: 40%;
+        transform: translate(-20%, -38%);
+        background: transparent;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .reg_box h4 {
+        font-size: 20px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 0;
+    }
+    .inputs .input-w {
+        width: 100%;
+        height: 100%;
+        padding: 10px 55px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 20px;
+        display: flex;
+        background: #fff;
+    }
+    .inputs .input-w:hover,
+    .inputs .input-w:focus {
+        color: #0085FF;
+        font-weight: 500;
+    }
+    .flex-check {
+        display: flex;
+        gap: 1rem;
+        font-size: 20px;
+        color: #fff;
+    }
+    .flex-check input {
+        width: 20px;
+    }
+    .inputs {
+        display: flex;
+    }
+    .inputs .icon {
+        position: absolute;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+    .inputs:hover .icond,
+    .inputs:focus .icond {
+        color: #0085FF;
+    }
+    .icond {
+        color: #000;
+        font-size: 30px;
+    }
+    .logo {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        overflow: hidden;
+        margin-left: 12px;
+        margin-top: -140px;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .reg_text {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 40%;
+        height: 50px;
+        border-radius: 0 30px 30px 0;
+        padding-left: 10px;
+        background: #0363BB;
+        overflow: hidden;
+    }
+    .reg_text h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'Intro';
+        color: #fff;
+    
+    }
+} */
+
+
+/* -------------------------Tablet mode ends-------------------------------------------- */
+
+
+/* -------------------------phone mode----------------------------- */
+
+
+/* @media screen and (max-width:600px) {
+    .reg_container {
+        background: #fff;
+        max-width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+    }
+    .bg {
+        flex: 5;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/svg/phonebg.svg);
+        background-repeat: no-repeat;
+        z-index: 3;
+        background-size: cover;
+        background-position: 100%;
+    }
+    .reg_box {
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        left: 10%;
+        top: 40%;
+        transform: translate(-10%, -30%);
+        padding: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .reg_box h4 {
+        font-size: 15px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 0;
+    }
+    .inputs .input-w {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 16px;
+        text-indent: 30px;
+        display: flex;
+        background: #fff;
+        border: 2px solid #0085FF;
+    }
+    .inputs .input-w:hover,
+    .inputs .input-w:focus {
+        color: #0085FF;
+        font-weight: 500;
+    }
+    .flex-check {
+        display: flex;
+        gap: 1rem;
+        font-size: 20px;
+        color: #fff;
+    }
+    .flex-check input {
+        width: 20px;
+    }
+    .inputs {
+        display: flex;
+    }
+    .inputs .icon {
+        position: absolute;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+    .inputs:hover .icond,
+    .inputs:focus .icond {
+        color: #0085FF;
+    }
+    .icond {
+        color: #000;
+        font-size: 20px;
+    }
+    .logo {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        overflow: hidden;
+        margin-left: 12px;
+        margin-top: -140px;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .reg_text {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 40%;
+        height: 50px;
+        border-radius: 0 30px 30px 0;
+        padding-left: 10px;
+        background: #0363BB;
+        overflow: hidden;
+    }
+    .reg_text h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Intro';
+        color: #fff;
+    }
+}
+
+.err {
+    color: red;
+    font-size: 500;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: right;
+    padding: 5px;
+    transition: all 400ms ease;
+}
+
+.sucs {
+    color: rgb(14, 233, 14);
+    font-size: 12px;
+    text-align: right;
+    font-weight: 800;
+}
+
+.err>.input-w {
+    border: 2px solid red;
+} */
+
+/* @media screen and (max-width: 400px) {
+    @-ms-viewport {
+        width: 320px;
+    }
+    .reg_container {
+        background: #fff;
+        max-width: 100%;
+        height: 110vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+    }
+    .bg {
+        flex: 5;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/svg/phonebg.svg);
+        background-repeat: no-repeat;
+        z-index: 3;
+        background-size: cover;
+        background-position: 100%;
+    }
+    .illustrator2 {
+        flex: 1;
+        background: #fff;
+        height: 100vh;
+        background-image: url(../../assets/illusatrators/regillustrator.png);
+        width: 100%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        z-index: 1;
+        animation: bounceInUp;
+        animation-duration: 2s;
+    }
+    .reg_container {
+        background: #fff;
+        max-width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+    }
+    .reg_box {
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        left: 10%;
+        top: 40%;
+        transform: translate(-10%, -30%);
+        padding: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .reg_box h4 {
+        font-size: 15px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 0;
+    }
+    .inputs .input-w {
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 15px;
+        display: flex;
+        background: #fff;
+        border: 2px solid #0085FF;
+    }
+    .inputs .input-w:hover,
+    .inputs .input-w:focus {
+        color: #0085FF;
+        font-weight: 500;
+    }
+    .flex-check {
+        display: flex;
+        gap: 1rem;
+        font-size: 20px;
+        color: #fff;
+    }
+    .flex-check input {
+        width: 20px;
+    }
+    .inputs {
+        display: flex;
+    }
+    .inputs .icon {
+        position: absolute;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+    .inputs:hover .icond,
+    .inputs:focus .icond {
+        color: #0085FF;
+    }
+    .icond {
+        color: #000;
+        font-size: 20px;
+    }
+    .logo {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        overflow: hidden;
+        margin-left: 12px;
+        margin-top: -140px;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .reg_text {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 35%;
+        height: 40px;
+        border-radius: 0 30px 30px 0;
+        padding-left: 10px;
+        background: #0363BB;
+        overflow: hidden;
+    }
+    .reg_text h1 {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: 'Intro';
+        color: #fff;
+    }
+    .err {
+        color: red;
+        font-size: 500;
+        font-family: sans-serif;
+        font-size: 10px;
+        text-align: right;
+        padding: 0px;
+        transition: all 400ms ease;
+    }
+} */
+
+/* @media screen and (min-width: 400px) and (max-width: 980px) {
+    @-ms-viewport {
+        width: 400px;
+    }
+    .reg_container {
+        background: #fff;
+        max-width: 100%;
+        height: 110vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+    }
+    .bg {
+        flex: 5;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/svg/phonebg.svg);
+        background-repeat: no-repeat;
+        z-index: 3;
+        background-size: cover;
+        background-position: 100%;
+    }
+    .illustrator2 {
+        flex: 1;
+        background: #fff;
+        height: 100vh;
+        background-image: url(../../assets/illusatrators/regillustrator.png);
+        width: 100%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        z-index: 1;
+        animation: bounceInUp;
+        animation-duration: 2s;
+    }
+    .reg_container {
+        background: #fff;
+        max-width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+    }
+    .reg_box {
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        left: 10%;
+        top: 40%;
+        transform: translate(-10%, -30%);
+        padding: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .reg_box h4 {
+        font-size: 15px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 0;
+    }
+    .inputs .input-w {
+        width: 100%;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 15px;
+        display: flex;
+        background: #fff;
+        border: 2px solid #0085FF;
+    }
+    .inputs .input-w:hover,
+    .inputs .input-w:focus {
+        color: #0085FF;
+        font-weight: 500;
+    }
+    .flex-check {
+        display: flex;
+        gap: 1rem;
+        font-size: 20px;
+        color: #fff;
+    }
+    .flex-check input {
+        width: 20px;
+    }
+    .inputs {
+        display: flex;
+    }
+    .inputs .icon {
+        position: absolute;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+    .inputs:hover .icond,
+    .inputs:focus .icond {
+        color: #0085FF;
+    }
+    .icond {
+        color: #000;
+        font-size: 20px;
+    }
+    .logo {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        overflow: hidden;
+        margin-left: 12px;
+        margin-top: -140px;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .reg_text {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 35%;
+        height: 40px;
+        border-radius: 0 30px 30px 0;
+        padding-left: 10px;
+        background: #0363BB;
+        overflow: hidden;
+    }
+    .reg_text h1 {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: 'Intro';
+        color: #fff;
+    }
+    .err {
+        color: red;
+        font-size: 500;
+        font-family: sans-serif;
+        font-size: 10px;
+        text-align: right;
+        padding: 0px;
+        transition: all 400ms ease;
+    }
+} */
+
+/* @media screen and (min-width: 980px) and (max-width: 1024px) {
+    @-ms-viewport {
+        width: 640px;
+    }
+    .reg_container {
+        background: #fff;
+        max-width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+    }
+    .bg {
+        flex: 1.8;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/svg/background1.svg);
+        background-repeat: no-repeat;
+        z-index: 3;
+        background-size: contain;
+    }
+    .illustrator2 {
+        flex: 1;
+        background: #fff;
+        height: 100vh;
+        background-image: url(../../assets/illusatrators/regillustrator.png);
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -180px;
+        z-index: 1;
+    }
+    .reg_box {
+        position: absolute;
+        width: 55%;
+        height: 600px;
+        left: 20%;
+        top: 350px;
+        transform: translate(-27%, -38%);
+        background: transparent;
+        padding: 50px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .reg_box h4 {
+        font-size: 20px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 0;
+    }
+    .inputs .input-w {
+        width: 100%;
+        height: 100%;
+        padding: 10px 55px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 20px;
+        display: flex;
+        background: #fff;
+    }
+    .inputs .input-w:hover,
+    .inputs .input-w:focus {
+        color: #0085FF;
+        font-weight: 500;
+    }
+    .flex-check {
+        display: flex;
+        gap: 1rem;
+        font-size: 20px;
+        color: #fff;
+    }
+    .flex-check input {
+        width: 20px;
+    }
+    .inputs {
+        display: flex;
+    }
+    .inputs .icon {
+        position: absolute;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+    .inputs:hover .icond,
+    .inputs:focus .icond {
+        color: #0085FF;
+    }
+    .icond {
+        color: #000;
+        font-size: 30px;
+    }
+    .logo {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        overflow: hidden;
+        margin-left: 12px;
+        margin-top: -140px;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .reg_text {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 40%;
+        height: 50px;
+        border-radius: 0 30px 30px 0;
+        padding-left: 10px;
+        background: #0363BB;
+        overflow: hidden;
+    }
+    .reg_text h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'Intro';
+        color: #fff;
+    }
+} */
+
+/* @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    @-ms-viewport {
+        width: 1024px;
+    }
+    .reg_container {
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+    }
+    .bg {
+        flex: 1.8;
+        position: relative;
+        width: 100%;
+        height: 100VH;
+        background-image: url(../../assets/svg/background1.svg);
+        background-repeat: no-repeat;
+        z-index: 3;
+        background-size: cover;
+    }
+    .illustrator2 {
+        flex: 1;
+        background: #fff;
+        height: 100vh;
+        background-image: url(../../assets/illusatrators/regillustrator.png);
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -180px;
+        z-index: 1;
+    }
+    .reg_box {
+        position: absolute;
+        width: 450px;
+        height: 600px;
+        left: 20%;
+        top: 350px;
+        transform: translate(-27%, -38%);
+        background: transparent;
+        padding: 50px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .reg_box h4 {
+        font-size: 15px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 0;
+    }
+    .inputs .input-w {
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px 5px 55px;
+        border-radius: 5px;
+        border-style: none;
+        font-size: 15px;
+        display: flex;
+        background: #fff;
+    }
+    .bar-inputs {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 15px;
+        text-indent: 40px;
+        display: flex;
+        background: #fff;
+        border: 2px solid #0085FF;
+    }
+    .inputs .input-w:hover,
+    .inputs .input-w:focus {
+        color: #0085FF;
+        font-weight: 500;
+    }
+    .pass-inputs {
+        display: flex;
+        gap: 1rem;
+    }
+    .pass-inputs label {
+        flex: 1;
+        
+    }
+    .inputs {
+        display: flex;
+    }
+    .inputs .icon {
+        position: absolute;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        padding: 2px;
+        border-radius: 10px 0px 0px 10px;
+        transition: all 400ms ease;
+    }
+    .inputs:hover .icond,
+    .inputs:focus .icond {
+        color: #0085FF;
+    }
+    .icond {
+        color: #000;
+        font-size: 12px;
+        transition: all 400ms ease;
+    }
+    .register h5 {
+        font-size: 15px;
+    }
+} */
+
+/* @media screen and (min-width: 1366px) {
+    .reg_container {
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+    }
+    .bg {
+        flex: 1.8;
+        position: relative;
+        width: 100%;
+        height: 100VH;
+        background-image: url(../../assets/svg/background1.svg);
+        background-repeat: no-repeat;
+        z-index: 3;
+        background-position: 0%;
+        background-size: contain;
+    }
+    .illustrator2 {
+        flex: 1;
+        background: #fff;
+        height: 100vh;
+        background-image: url(../../assets/illusatrators/regillustrator.png);
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -180px;
+        z-index: 1;
+    }
+    .reg_box {
+        position: absolute;
+        width: 55%;
+        height: 600px;
+        left: 20%;
+        top: 350px;
+        transform: translate(-27%, -38%);
+        background: transparent;
+        padding: 50px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .reg_box h4 {
+        font-size: 15px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 0;
+    }
+    .inputs .input-w {
+        width: 100%;
+        height: 100%;
+        padding: 8px 5px 8px 55px;
+        border-radius: 5px;
+        border-style: none;
+        font-size: 20px;
+        display: flex;
+        background: #fff;
+    }
+    .bar-inputs {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 15px;
+        text-indent: 40px;
+        display: flex;
+        background: #fff;
+        border: 2px solid #0085FF;
+    }
+    .inputs .input-w:hover,
+    .inputs .input-w:focus {
+        color: #0085FF;
+        font-weight: 500;
+    }
+    .pass-inputs {
+        display: flex;
+        gap: 1rem;
+    }
+    .pass-inputs label {
+        flex: 1;
+    }
+    .inputs {
+        display: flex;
+    }
+    .inputs .icon {
+        position: absolute;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        padding: 0px;
+        border-radius: 10px 0px 0px 10px;
+        transition: all 400ms ease;
+    }
+    .inputs:hover .icond,
+    .inputs:focus .icond {
+        color: #0085FF;
+    }
+    .icond {
+        color: #000;
+        font-size: 20px;
+        transition: all 400ms ease;
+    }
+} */
