@@ -36,7 +36,7 @@
     width: 5px; /* Adjust the width of the scrollbar */
     height: 5px;
     padding: 8px;
-    background: transparent;
+    background: #cccccc1c;
   }
   ::-webkit-scrollbar:hover {
     width: 10px; /* Adjust the width of the scrollbar */
@@ -46,15 +46,17 @@
   
   /* Style the scrollbar thumb */
   ::-webkit-scrollbar-thumb {
+   background: #00586D;
     /* Set the color of the scrollbar thumb */
     border-radius: 20px; 
+    height: 20px;
     /* Set the border radius of the scrollbar thumb */
   }
-  
+
   
   /* Style the scrollbar track on hover */
   ::-webkit-scrollbar-track:hover {
-    background-color: #a6a6a6; /* Set the background color of the scrollbar track on hover */
+    background-color: transparent; /* Set the background color of the scrollbar track on hover */
   }
   
   /* Style the scrollbar thumb on hover */
