@@ -5,6 +5,7 @@ import {Link, Outlet, useNavigate} from 'react-router-dom';
 import { BsEnvelopeFill } from "react-icons/bs";
 import { FaUserAlt, FaUserCircle, FaRegEyeSlash, FaRegEye } from "react-icons/fa";
 import { MdPassword, MdVpnKey } from "react-icons/md"
+import Lottieanimation from '../../components/Lottieanimation';
 import axios from "axios";
 
 
@@ -179,9 +180,12 @@ const onRegister = async (e) =>{
   return (
     <>
     <div className="reg_container">
-    <div className="illustrator2"></div>
+    <div className="illustrator2">
+    <Lottieanimation/>
+    </div>
 
-      <div className="bg">
+      <div className="bg relative">
+      <div className="shape"></div>
       <div className="logo flex justify-center flex-col  w-full items-center py-8">
           <h1 className='text-4xl capitalize font-bold text-white text-left'>Hi There!</h1>
           <h4 className='text-slate-300 text-xs text-left'>Create a new account to get started.</h4>
