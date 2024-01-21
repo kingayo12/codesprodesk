@@ -6,7 +6,9 @@ import {FaRegEyeSlash, FaRegEye } from "react-icons/fa";
 import Lottieanimation from '../../components/Lottieanimation';
 import { BsEnvelopeFill } from "react-icons/bs";
 import { MdPassword } from "react-icons/md";
+import Logo from '../../assets/logo/logo1.png';
 import axios from 'axios';
+import Button from '../../components/button'
 const loginURL = 'https://helpdeskserver.up.railway.app/api/auth/login';
 
 
@@ -23,6 +25,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
+  const [loading, setLoading] = useState(false);
 
 
 
@@ -55,6 +58,8 @@ const Login = () => {
   }, []);
 // submit function
     const handleLogin = async (e) => {
+      setLoading(true);
+      
       e.preventDefault();
       const data = {
         email: Email,
@@ -121,6 +126,9 @@ const Login = () => {
         }
 
        }
+       setTimeout(() => {
+        setLoading(false);
+      }, 2000);
        
   }
 
@@ -130,13 +138,18 @@ const Login = () => {
    
     <div className="login_container">
 
-      <div className="bg2">
-        <div className="logo flex justify-center flex-col  w-full items-center py-8">
-          <h1 className='text-4xl capitalize font-bold text-white text-left'>Sign In!</h1>
-          <h4 className='text-slate-300 text-xs text-left'>Access your account by logging in with your email and password.</h4>
-        </div>
-        <div className="login_box">
+      <div className="bg2 flex items-center flex-col justify-center relative">
+        <div className="shape"></div>
+      <div className="logo mx-1 w-50">
+        <img src={Logo} alt="" />
+      </div>
+        <div className="logo z-10 flex justify-center flex-col  w-full items-center py-8">
+          <h1 className='text-4xl capitalize font-bold text-white text-left z-10'>Sign In!</h1>
+          <h4 className='text-slate-300 text-xs text-left z-10'>Access your account by logging in with your email and password.</h4>
           <div className="err">{ErrMsg}</div>
+        </div>
+        <div className="login_box z-10">
+          
           <form action="">
           <label htmlFor="Email" className='animate__animated animate__fadeInLeft'>
             <h4>Email</h4>
@@ -173,19 +186,25 @@ const Login = () => {
           </label>
           <label htmlFor="Email" className='flex-check'>
             
-            <div className="inputs">
+            <div className="inputs z-10">
              <input 
              type="checkbox"
              id="rememberMe"
              checked={rememberMe}
              onChange={(e) => setRememberMe(e.target.checked)}
               />
-             
+              <h4>Remember me</h4>
+            </div>  
+
+            <div className="forgot_password">
+
             </div>
-            <h4>Remember me</h4>
+           
           </label>
-          <button className='btn-primary2 btn1 animate__animated animate__fadeInUp' onClick={handleLogin}>Login</button>
-          </form>
+          <Button onClick={handleLogin} loading={loading}>
+        Login
+      </Button>
+          </form> 
           <div className="register animate__animated animate__fadeInUp  ">
             <h5> Don't have an account yet?
             <Link to="/Register" className='ck_reg'>Register</Link></h5>
@@ -194,7 +213,10 @@ const Login = () => {
         </div>
       </div>
       <Outlet/>
-      <div className="illustrator">
+      <div className="illustrator relative">
+        {/* <div className="shape3"></div> */}
+        <div className="shape4"></div>
+        <div className="shape5"></div>
         <div className="f-design">
         <Lottieanimation/>
         </div>

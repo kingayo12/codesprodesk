@@ -1,8 +1,7 @@
 .login_container {
     max-width: 100%;
     height: 100vh;
-    overflow: hidden;
-    background: linear-gradient(116.46deg, #186679 -0.13%, #14004F 99.56%);
+    overflow: visible !important;
     display: flex;
 }
 
@@ -11,214 +10,275 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #0000004c;
-    backdrop-filter: blur(100px);
+    background: rgba(20, 106, 177, 0.608);
+    /* backdrop-filter: blur(100px); */
+    /* background: linear-gradient(to right, #ffffffce, rgba(0, 0, 255, 0.215)); */
     border-radius: 0;
     background-repeat: no-repeat;
     z-index: 3;
     background-size: contain;
 }
 
+.shape {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--bg-linear-color);
+    height: 500px;
+    border-radius: 0 0 600px 0;
+    z-index: 0;
+}
+
+
+.shape3 {
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, #fff, #0e3262a8);
+    height: 300px;
+    /* border-radius:600px 0 0 0; */
+    z-index: 0;
+}
+
+.shape4 {
+    position: absolute;
+    width: 500px;
+    bottom: 8px;
+    right: 10px;
+    background: var(--bg-linear-color);
+    height: 350px;
+    /* border-radius:600px 0 0 0; */
+    z-index: 0;
+}
+
+.shape5 {
+    position: absolute;
+    width: 500px;
+    top: 8px;
+    left: 10px;
+    background: var(--bg-linear-color);
+    height: 350px;
+    /* border-radius:600px 0 0 0; */
+    z-index: 0;
+}
+
+.illustrator {
+    flex: 1.5;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: rgba(20, 106, 177, 0.608);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (min-width: 1150px) {
     .illustrator {
-        flex: 1.5;
-        height: 100vh;
-        width: 100%;
-        /* clip-path: polygon(20, 30, 20, 30, 1); */
-        z-index: 1;
         display: flex;
-        align-items: center;
-        justify-content: center;
+    }
+}
 
-    }
-    .login_box {
-        clear: both;
-        margin: 0 50px;
-        width: 500px;
-        height: auto;
-        padding: 25px;
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .login_box h4 {
-        font-size:14px;
-        color: #fff;
-        text-transform: capitalize;
-        padding: 10px 0;
-    }
-    
-    .inputs .input-w {
-        width: 100%;
-        height: 100%;
-        padding: 10px 55px;
-        border-radius: 10px;
-        border-style: none;
-        font-size: 14px;
-        display: flex;
-        background: #fff;
-        box-shadow: 1px 1px 4px 1px #030303, -1px -1px 1px 4px #ffffff4f;
-    }
-    
-    .inputs .input-w:hover,
-    .inputs .input-w:focus {
-        color: #0085FF;
-        font-weight: 500;
-    }
-    
-    .flex-check {
-        display: flex;
-        gap: 1rem;
-        font-size: 20px;
-        color: #fff;
-    }
-    
-    .flex-check input {
-        width: 20px;
-    }
-    
-    .inputs {
-        display: flex;
-        align-items: center;
-    }
-    
-    .inputs .icon {
-        position: absolute;
-        background: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        border-radius: 10px 0px 0px 10px;
-        transition: all 400ms ease;
-    }
-    
-    @keyframes shake {
-        20% {
-            transform: translateX(5px);
-        }
-        40% {
-            transform: translateX(-5px);
-        }
-        60% {
-            transform: translateX(5px);
-        }
-        80% {
-            transform: translateX(-5px);
-        }
-        80% {
-            transform: translateX(5px);
-        }
-    }
-    
-    .inputs:hover .icon,
-    .inputs:focus .icon {
-        color: #0085FF;
-    }
-    
-    .inputs:hover .icond,
-    .inputs:focus .icond {
-        color: #0085FF;
-    }
-    
-    .icond {
-        color: #000;
-        font-size: 30px;
-        transition: all 400ms ease;
-    }
-    
-    .logo img {
-        width: 270px;
-        filter: drop-shadow(1px 1px 1px blue);
-    }
-    
-    .login_text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        height: 50px;
-        border-radius: 0 30px 30px 0;
-        background: #fff;
-    }
-    
-    .login_text h1 {
-        font-size: 30px;
-        text-transform: uppercase;
-        font-family: 'Intro';
-        color: #0085FF;
-    }
-    
-    .btn-primary2 {
-        width: 100%;
-        height: 20px;
-        padding: 20px;
-        background: #000;
-        font-size: 15px;
-        line-height: 1px;
-        border-radius: 10px;
-        border-style: none;
-        color: #fff;
-        font-weight: 600;
-        transition: all 800ms ease;
-        cursor: pointer;
-        transition: color 1s ease;
-        position: relative;
-        overflow: hidden;
-        /* box-shadow: 1px 1px 4px 1px #186679, -1px -1px 4px 1px #14004f96; */
-        margin-top: 1rem;
-    }
-    .btn-primary2:hover{
-        background: #00000077;
-        color: #fff;
+.login_box {
+    clear: both;
+    margin: 0 50px;
+    width: 500px;
+    height: auto;
+    padding: 25px;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.login_box h4 {
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.inputs .input-w {
+    width: 100%;
+    height: 100%;
+    padding: 10px 55px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    display: flex;
+    background: #fff;
+
+}
+
+.inputs .input-w:hover,
+.inputs .input-w:focus {
+    color: #0E3362 I !important;
+    font-weight: 500;
+}
+
+.flex-check {
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+    color: #fff;
+}
+
+.flex-check input {
+    width: 20px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+}
+
+.inputs .icon {
+    position: absolute;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border-radius: 10px 0px 0px 10px;
+    transition: all 400ms ease;
+}
+
+@keyframes shake {
+    20% {
+        transform: translateX(5px);
     }
-    
-    .register {
-        width: 100%;
-        padding: 20px 0px;
+
+    40% {
+        transform: translateX(-5px);
     }
-    
-    .register h5 {
-        text-align: center;
-        font-size: 15px;
+
+    60% {
+        transform: translateX(5px);
     }
-    
-    .ck_reg {
-        color: #fff;
-        padding: 0 10px;
-        text-decoration: none;
+
+    80% {
+        transform: translateX(-5px);
     }
-    .f-design{
-        width: 100%;
-        height: 100%;
-        /* background: #0000004b; */
-        background: url("/img/codesoft3d.png") #0000004b no-repeat ;
-        background-size: 600px;
-        background-position: 100%;
-        animation: reduce 10s infinite ease forwards;
-        mix-blend-mode:multiply;
+
+    80% {
+        transform: translateX(5px);
     }
-    @keyframes reduce{
-        10%{
-            background-size: 0px;
-        }
-        80%{
-            background-size: 800px;
-            background-position: 500%;
-        }
-       
+}
+
+.inputs:hover .icon,
+.inputs:focus .icon {
+    color: #0E3362;
+}
+
+.inputs:hover .icond,
+.inputs:focus .icond {
+    color: #0E3362;
+}
+
+.icond {
+    color: #000;
+    font-size: 30px;
+    transition: all 400ms ease;
+}
+
+.logo img {
+    width: 270px;
+    filter: drop-shadow(1px 1px 1px blue);
+}
+
+.login_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    border-radius: 0 30px 30px 0;
+    background: #fff;
+}
+
+.login_text h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Intro';
+    color: #0085FF;
+}
+
+.btn-primary2 {
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    border: 1px solid #fff !important;
+    font-size: 15px;
+    line-height: 1px;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 800ms ease;
+    cursor: pointer;
+    transition: color 1s ease;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.btn-primary2:hover {
+    background: #00000077;
+    color: #fff;
+
+}
+
+.register {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.register h5 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.ck_reg {
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.f-design {
+    width: 96%;
+    height: 96%;
+    z-index: 10;
+    background: #ffffffbe;
+    backdrop-filter: blur(100px);
+    /* background: url("/img/codesoft3d.png") #0000004b no-repeat; */
+    background-size: 600px;
+    background-position: 100%;
+    animation: reduce 10s infinite ease forwards;
+    /* mix-blend-mode: multiply; */
+}
+
+@keyframes reduce {
+    10% {
+        background-size: 0px;
     }
-    
-    .err {
-        color: rgb(239, 50, 50);
-        font-size: 12px;
-        font-weight: 500;
-        font-family: sans-serif;
-        padding-top: 5px;
-        width: fit-content;
-        border-radius: 2px;
+
+    80% {
+        background-size: 800px;
+        background-position: 500%;
     }
+
+}
+
+.err {
+    color: rgb(239, 50, 50);
+    font-size: 12px;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding-top: 5px;
+    width: fit-content;
+    border-radius: 2px;
+}

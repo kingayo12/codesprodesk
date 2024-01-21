@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter ,Routes, Route } from 'react-router-dom';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import 'animate.css';
@@ -14,9 +14,9 @@ import Userprofile from './pages/userprofile/Userprofile';
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename="/helpdesk">
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" index element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/confirm-mail" element={<Emailconfirm />} />
         <Route path="/helpdesk" element={<Home />}/>
@@ -29,7 +29,7 @@ const App = () => {
         <Route path="*" element={<Page404/>} />
 
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 

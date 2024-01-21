@@ -12,8 +12,10 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(116.46deg, #186679 -0.13%, #14004F 99.56%);
-    backdrop-filter: blur(10px);
+    /* background: linear-gradient(116.46deg, #186679 -0.13%, #14004F 99.56%); */
+    /* backdrop-filter: blur(10px); */
+    background: rgba(20, 106, 177, 0.608);
+
     border-radius: 0 ;
     background-repeat: no-repeat;
     z-index: 3;
@@ -24,7 +26,7 @@
     flex: 1.5;
     /* background: #fff; */
     height: 100vh;
-    /* background: #0085FF; */
+    /* background: #0E3362; */
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,13 +78,13 @@ form {
     text-indent: 40px;
     display: flex;
     background: #fff;
-    border: 2px solid #0085FF;
+    border: 2px solid #0E3362;
 }
 
 .inputs .input-w:hover,
 .inputs .input-w:focus {
-    color: #0085FF;
-    border: 1px solid #0085FF;
+    color: #0E3362;
+    border: 1px solid #0E3362;
     font-weight: 500;
 }
 
@@ -122,7 +124,7 @@ form {
 
 .inputs:hover .icond,
 .inputs:focus .icond {
-    color: #0085FF;
+    color: #0E3362;
 }
 
 .icond {
@@ -134,7 +136,7 @@ form {
 
 
 /* .icon .icond:hover {
-    color: #0085FF;
+    color: #0E3362;
 } */
 
 .logo {
@@ -159,7 +161,7 @@ form {
     font-size: 30px;
     text-transform: uppercase;
     font-family: 'Intro';
-    color: #0085FF;
+    color: #0E3362;
 }
 
 .btn-primary {
@@ -240,18 +242,18 @@ form {
         text-indent: 40px;
         display: flex;
         background: #fff;
-        border: 2px solid #0085FF;
+        border: 2px solid #0E3362;
     }
     .inputs .input-w:hover,
     .inputs .input-w:focus {
-        color: #0085FF;
+        color: #0E3362;
         font-weight: 500;
     }
     .btn-primary {
         width: 100%;
         padding: 1px;
         font-size: 15px;
-        background: linear-gradient(to right, #0363BB, #0085FF);
+        background: linear-gradient(to right, #0363BB, #0E3362);
         border-radius: 10px;
         border-style: none;
         color: #fff;
@@ -384,7 +386,7 @@ form {
     }
     .inputs .input-w:hover,
     .inputs .input-w:focus {
-        color: #0085FF;
+        color: #0E3362;
         font-weight: 500;
     }
     .flex-check {
@@ -410,7 +412,7 @@ form {
     }
     .inputs:hover .icond,
     .inputs:focus .icond {
-        color: #0085FF;
+        color: #0E3362;
     }
     .icond {
         color: #000;
@@ -503,11 +505,11 @@ form {
         text-indent: 30px;
         display: flex;
         background: #fff;
-        border: 2px solid #0085FF;
+        border: 2px solid #0E3362;
     }
     .inputs .input-w:hover,
     .inputs .input-w:focus {
-        color: #0085FF;
+        color: #0E3362;
         font-weight: 500;
     }
     .flex-check {
@@ -533,7 +535,7 @@ form {
     }
     .inputs:hover .icond,
     .inputs:focus .icond {
-        color: #0085FF;
+        color: #0E3362;
     }
     .icond {
         color: #000;
@@ -663,11 +665,11 @@ form {
         font-size: 15px;
         display: flex;
         background: #fff;
-        border: 2px solid #0085FF;
+        border: 2px solid #0E3362;
     }
     .inputs .input-w:hover,
     .inputs .input-w:focus {
-        color: #0085FF;
+        color: #0E3362;
         font-weight: 500;
     }
     .flex-check {
@@ -693,7 +695,7 @@ form {
     }
     .inputs:hover .icond,
     .inputs:focus .icond {
-        color: #0085FF;
+        color: #0E3362;
     }
     .icond {
         color: #000;
@@ -810,11 +812,11 @@ form {
         font-size: 15px;
         display: flex;
         background: #fff;
-        border: 2px solid #0085FF;
+        border: 2px solid #0E3362;
     }
     .inputs .input-w:hover,
     .inputs .input-w:focus {
-        color: #0085FF;
+        color: #0E3362;
         font-weight: 500;
     }
     .flex-check {
@@ -840,7 +842,7 @@ form {
     }
     .inputs:hover .icond,
     .inputs:focus .icond {
-        color: #0085FF;
+        color: #0E3362;
     }
     .icond {
         color: #000;
@@ -950,7 +952,7 @@ form {
     }
     .inputs .input-w:hover,
     .inputs .input-w:focus {
-        color: #0085FF;
+        color: #0E3362;
         font-weight: 500;
     }
     .flex-check {
@@ -976,7 +978,7 @@ form {
     }
     .inputs:hover .icond,
     .inputs:focus .icond {
-        color: #0085FF;
+        color: #0E3362;
     }
     .icond {
         color: #000;
@@ -1084,11 +1086,11 @@ form {
         text-indent: 40px;
         display: flex;
         background: #fff;
-        border: 2px solid #0085FF;
+        border: 2px solid #0E3362;
     }
     .inputs .input-w:hover,
     .inputs .input-w:focus {
-        color: #0085FF;
+        color: #0E3362;
         font-weight: 500;
     }
     .pass-inputs {
@@ -1115,7 +1117,7 @@ form {
     }
     .inputs:hover .icond,
     .inputs:focus .icond {
-        color: #0085FF;
+        color: #0E3362;
     }
     .icond {
         color: #000;
@@ -1197,11 +1199,11 @@ form {
         text-indent: 40px;
         display: flex;
         background: #fff;
-        border: 2px solid #0085FF;
+        border: 2px solid #0E3362;
     }
     .inputs .input-w:hover,
     .inputs .input-w:focus {
-        color: #0085FF;
+        color: #0E3362;
         font-weight: 500;
     }
     .pass-inputs {
@@ -1227,7 +1229,7 @@ form {
     }
     .inputs:hover .icond,
     .inputs:focus .icond {
-        color: #0085FF;
+        color: #0E3362;
     }
     .icond {
         color: #000;
